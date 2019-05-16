@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'GXLSwiftTools_Example' do
+  pod 'GXLSwiftTools', :path => '../'
+
+  target 'GXLSwiftTools_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

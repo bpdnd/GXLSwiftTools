@@ -1,0 +1,16 @@
+PODS:
+  - GXLSwiftTools (0.1.0)
+
+DEPENDENCIES:
+  - GXLSwiftTools (from `../`)
+
+EXTERNAL SOURCES:
+  GXLSwiftTools:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GXLSwiftTools: c0fc7e3890a858b8f075ded6ba51a3b4770f8ed6
+
+PODFILE CHECKSUM: 4a5f270d1a615899c3bdd70ecc44473148370731
+
+COCOAPODS: 1.6.1

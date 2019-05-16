@@ -1,0 +1,6 @@
+framework module Pods_GXLSwiftTools_Tests {
+  umbrella header "Pods-GXLSwiftTools_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

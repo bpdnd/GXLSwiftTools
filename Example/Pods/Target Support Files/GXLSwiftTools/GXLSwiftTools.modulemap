@@ -1,0 +1,6 @@
+framework module GXLSwiftTools {
+  umbrella header "GXLSwiftTools-umbrella.h"
+
+  export *
+  module * { export * }
+}
