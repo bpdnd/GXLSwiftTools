@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GXLSwiftTools'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'swift 工具集合'
   s.swift_version    = '5.0'
 # This description is used to generate tags and improve search results.
