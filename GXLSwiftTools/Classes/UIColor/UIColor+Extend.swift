@@ -47,4 +47,43 @@ extension UIColor{
         Scanner.init(string: bStr).scanHexInt32(&b);
         return UIColor.init(red: CGFloat(r)/255.0, green: CGFloat(g)/255.0, blue: CGFloat(b)/255.0, alpha: 1);
     }
+    
+    
+    /// 随机色
+    ///
+    /// - Returns: 颜色
+    static func gxl_randomColor() -> UIColor {
+        return gl_colorWithRGB(r: CGFloat(arc4random_uniform(256)), g: CGFloat(arc4random_uniform(256)), b: CGFloat(arc4random_uniform(256)))
+    }
+    
+    
+    /// red，green，blue，alpha
+    ///
+    /// - Parameters:
+    ///   - r: 红色
+    ///   - g: 绿色
+    ///   - b: 蓝色
+    ///   - alpha: 透明度
+    /// - Returns: 颜色
+    static func gxl_colorWithRGBA(r:CGFloat,g:CGFloat,b:CGFloat,alpha:CGFloat) -> UIColor {
+        
+        return self.init(red:r / 255.0,green:g/255.0,blue:b / 255.0,alpha:alpha)
+    }
+    
+    
+    ///   red，green，blue
+    ///
+    /// - Parameters:
+    ///   - r: 红色
+    ///   - g: 绿色
+    ///   - b: 蓝色
+    /// - Returns: f颜色
+    static func gxl_colorWithRGB(r:CGFloat,g:CGFloat,b:CGFloat) -> UIColor {
+        return gxl_colorWithRGBA(r: r, g: g, b: b, alpha: 1.0)
+    }
+    
+    static func gxl_colorWithHex(hex:Int,alpha:CGFloat) -> UIColor {
+        return UIColor.init(red:CGFloat((hex >> 16) & 0xFF) / 255.0,green:CGFloat((hex >> 8) & 0xFF) / 255.0,blue:CGFloat(hex & 0xFF) / 255.0,alpha:alpha)
+    }
+    
 }
