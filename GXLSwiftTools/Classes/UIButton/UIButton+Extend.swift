@@ -237,4 +237,34 @@ extension UIButton {
         imageEdgeInsets = UIEdgeInsets(top: -labelHeight-space/2, left: 0, bottom: 0, right: -titleLabelWidth)
         titleEdgeInsets = UIEdgeInsets(top: 0, left: -imageWidth, bottom: -imageWidth-space/2, right: 0)
     }
+
 }
+
+//MARK: 渐变色
+extension UIButton {
+    
+    /// 背景色 -- 渐变色
+    ///
+    /// - Parameters:
+    ///   - colors: 颜色
+    ///   - direction: 方向
+    ///   - state: 状态
+    public func setGradientBackgroundColors(_ colors: [UIColor], direction: DTImageGradientDirection, for state: UIControlState) {
+        if colors.count > 1 {
+            // Gradient background
+            setBackgroundImage(UIImage(size: CGSize(width: 1, height: 1), direction: direction, colors: colors), for: state)
+        }
+        else {
+            if let color = colors.first {
+                // Mono color background
+                setBackgroundImage(UIImage(color: color, size: CGSize(width: 1, height: 1)), for: state)
+            }
+            else {
+                // Default background color
+                setBackgroundImage(nil, for: state)
+            }
+        }
+    }
+}
+
+

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GXLSwiftTools'
-  s.version          = '0.1.2'
+  s.version          = '0.1.0'
   s.summary          = 'swift 工具集合'
   s.swift_version    = '5.0'
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
    把使用的tools 集合
                        DESC
 
-  s.homepage         = 'https://github.com/bpdnd'
+  s.homepage         = 'https://gitee.com/bpdnd'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'bpdnd' => '3438291751@qq.com' }
-  s.source           = { :git => 'https://github.com/bpdnd/GXLSwiftTools.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://gitee.com/bpdnd/GXLSwiftTools.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
