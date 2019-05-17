@@ -53,7 +53,7 @@ extension UIColor{
     ///
     /// - Returns: 颜色
     static func gxl_randomColor() -> UIColor {
-        return gl_colorWithRGB(r: CGFloat(arc4random_uniform(256)), g: CGFloat(arc4random_uniform(256)), b: CGFloat(arc4random_uniform(256)))
+        return gxl_colorWithRGB(r: CGFloat(arc4random_uniform(256)), g: CGFloat(arc4random_uniform(256)), b: CGFloat(arc4random_uniform(256)))
     }
     
     
